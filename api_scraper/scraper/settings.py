@@ -1,3 +1,4 @@
+import os.path
 # Django settings for scraper project.
 
 DEBUG = True
@@ -11,12 +12,12 @@ MANAGERS = ADMINS
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql', # Add 'postgresql_psycopg2', 'postgresql', 'mysql', 'sqlite3' or 'oracle'.
+        'ENGINE': 'django.db.backends.postgresql_psycopg2', # Add 'postgresql_psycopg2', 'postgresql', 'mysql', 'sqlite3' or 'oracle'.
         'NAME': 'scraper',                      # Or path to database file if using sqlite3.
         'USER': 'scraper',                      # Not used with sqlite3.
         'PASSWORD': 'scraper',                  # Not used with sqlite3.
-        'HOST': '127.0.0.1',                      # Set to empty string for localhost. Not used with sqlite3.
-        'PORT': '3306',                      # Set to empty string for default. Not used with sqlite3.
+        'HOST': '',                      # Set to empty string for localhost. Not used with sqlite3.
+        'PORT': '',                      # Set to empty string for default. Not used with sqlite3.
     }
 }
 
@@ -101,9 +102,10 @@ MIDDLEWARE_CLASSES = (
 )
 
 ROOT_URLCONF = 'scraper.urls'
+PROJECT_DIR = os.path.dirname(__file__)
 
 TEMPLATE_DIRS = (
-    "/Users/ampushkrush/eclipse/workspace/ApiSouper/api_scraper/scraper/templates",
+    os.path.join(PROJECT_DIR, "templates")
 )
 
 TEMPLATE_CONTEXT_PROCESSORS = ("django.contrib.auth.context_processors.auth",

@@ -1,31 +1,21 @@
-# README #
+# API Scraper Summary
 
-### What is this repository for? ###
+---
 
-* Quick summary
-  -- used for displaying api's in a table format to easily scroll through and explore
-  -- scraped from programmableweb.com
+1.  Used for displaying api's in a table format to easily scroll through and explore
+2.  Scraped from programmableweb.com
 
-### How do I get set up? ###
+## How do I get set up? ##
 
-* Summary of set up
-  -- you will need:
-     -- django1.3.1
-     -- BeautifulSoup
-     -- django_tables2
-* Configuration
-* Dependencies
-* Database configuration
-* How to run tests
-* Deployment instructions
+* You will need:
+    1. django1.3.1
+    2. BeautifulSoup
+    3. django_tables2
 
-### Contribution guidelines ###
+* Prototype has been setup and launched on Heroku at:
 
-* Writing tests
-* Code review
-* Other guidelines
+https://tranquil-stream-9498.herokuapp.com/
 
-### Who do I talk to? ###
+## Who do I talk to? ##
 
 * Repo owner or admin
-* Other community or team contact
